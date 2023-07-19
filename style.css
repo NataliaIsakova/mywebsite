@@ -1,0 +1,184 @@
+* {
+    font-family: 'Ubuntu Mono', monospace;
+    color: #F6F0F0;
+    margin: 0 0;
+    padding: 0 0;
+}
+
+body {
+    background-color: #1E1B1B;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 32px 20px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+}
+header,
+main {
+    width: 280px;   
+}
+
+.introduction,
+.slider,
+.projects {
+    margin-bottom: 20px;
+}
+
+header,
+p,
+ul,
+.contacts a,
+.photo,
+.codesphoto,
+.task,
+.par {
+    margin-bottom: 16px;
+}
+
+.sliderWrapper {
+    overflow: hidden;    
+}
+
+.limiter {
+    overflow-x: scroll;
+    -webkit-overflow-scrolling: touch;
+    cursor: grab;
+}
+
+.slider {
+    display: flex;
+
+}
+.slide {
+    position: relative;
+    width: fit-content;
+    margin-right: 16px;
+}
+
+h1 {
+    font-size: 24px;
+    line-height: 29px;
+    font-weight: bold;
+}
+
+p,
+ul {
+    font-size: 18px;
+    line-height: 27px;
+    margin-bottom: 8px;
+}
+
+a {
+    text-decoration: underline;
+    text-decoration-thickness: 0.25px;
+    text-underline-offset: 8px;
+    text-decoration-color: #F6F0F0;
+}
+
+h2 {
+    display: inline-block;
+    position: absolute;
+    margin: auto auto;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: fit-content;
+    height: fit-content;
+}
+
+h2 a {
+    text-decoration: none;
+}
+
+.list-header {
+    margin-bottom: 0;
+}
+
+ul {
+    list-style-type: "-";
+}
+image {
+    display: block;
+}
+.contacts a {
+    display: inline-block;
+}
+
+.myphoto {
+    width: 40px;
+}
+
+.header {
+    margin-bottom: 27px;
+    display: flex;
+    justify-content: space-between;
+    width: 280px;
+}
+
+.name {
+    margin-bottom: 27px;
+}
+
+.aplication {
+    font-weight: bolder;
+}
+
+.projectsname {
+    font-weight: 700;
+    margin-bottom: 0;
+}
+.description {
+    margin-bottom: 4px;
+}
+
+span {
+    font-size: 12px;
+    line-height: 11px;
+    padding: 3px 6px;
+    border-radius: 8px;
+}
+
+.html {
+    background-color: #E44D26;
+}
+
+.css {
+    background-color: #264DE4;
+}
+
+.js {
+    background-color: #F7DF1E;
+    color: #1E1B1B;
+}
+
+
+@media (min-width: 444px) {
+    header,
+    main {
+    width: 404px;   
+}
+}
+
+.avatar:hover {
+    animation: myAnim 3s ease-out 0s 1 normal forwards;
+}
+
+@keyframes myAnim {
+	0% {
+		transform: scale(1);
+	}
+
+	50% {
+		transform: scale(1.5);
+	}
+
+    100% {
+		transform: scale(0.5);
+	}
+}

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>  
+        <h1>Привет, меня зовут Наталья.<br>Я фронтенд разработчик</h1>
+        <img class="avatar" src="avatar.png" alt="my photo">
+    </header>
+    <main>
+        <div class="introduction">
+            <p>В 2023 году я закончила курсы веб-разработки Can She Code.</p>
+            <p class="list-header">Я успешно сдала модули:</p>
+            <ul>
+                <li>Introduction to Web Development (HTML, CSS)</li>
+                <li>Bootstrap-5</li>
+                <li>JavaScript</li>
+            </ul>
+        </div>
+        <div class="sliderWrapper">
+            <div class="limiter">
+                <div id="slider" class="slider">
+                    <div class="slide">
+                        <h2><a href="about.html">Обо мне</a></h2>
+                        <a href="about.html"><img src="bg-about.jpg" alt=""></a>
+                    </div>
+                    <div class="slide">
+                        <h2><a href="projects.html">Проекты</a></h2>
+                        <a href=""><img src="bg-projects.jpg" alt=""></a>
+                    </div>
+                    <div class="slide">
+                        <h2><a href="cv.pdf.jpg">CV</a></h2>
+                        <a href=""><img src="bg-CV.jpg" alt=""></a>
+                    </div>
+                </div>  
+            </div>
+        </div>                 
+        <div class="contacts">
+            <p><a href="">t.me/@Natalia_Isakova</a></p> 
+            <p><a href="">mymail@developer.com</a></p>
+            <p><a href="">github/NataliaIsakova</a></p>
+        </div>
+    </main>
+    <script src="index.js"></script>
+    <script type="text/javascript">
+        !function(e,n){"function"==typeof define&&define.amd?define(["exports"],n):n("undefined"!=typeof exports?exports:e.dragscroll={})}(this,function(e){var n,t,o=window,l=document,c="mousemove",r="mouseup",i="mousedown",m="EventListener",d="add"+m,s="remove"+m,f=[],u=function(e,m){for(e=0;e<f.length;)m=f[e++],m=m.containerm,m[s](i,m.md,0),o[s](r,m.mu,0),o[s](c,m.mm,0);for(f=[].slice.call(l.getElementsByClassName("dragscroll")),e=0;e<f.length;)!function(e,m,s,f,u,a){(a=e.containere)[d](i,a.md=function(n){e.hasAttribute("nochilddrag")&&l.elementFromPoint(n.pageX,n.pageY)!=a(f=1,m=n.clientX,s=n.clientY,n.preventDefault())},0),o[d](r,a.mu=function(){f=0},0),o[d](c,a.mm=function(o){f&&((u=e.scrollere).scrollLeft-=n=-m+(m=o.clientX),u.scrollTop-=t=-s+(s=o.clientY),e==l.body&&((u=l.documentElement).scrollLeft-=n,u.scrollTop-=t))},0)}(f[e++])};"complete"==l.readyState?u():o[d]("load",u,0),e.reset=u});
+      </script>
+</body>
+</html>
